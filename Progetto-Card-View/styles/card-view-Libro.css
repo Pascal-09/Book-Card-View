@@ -1,0 +1,327 @@
+      .global-card-view{
+        
+        width: 180px;
+        background-color: rgb(238, 238, 238);
+        border-radius: 10px;
+        box-shadow: 0px 0px 8px 0px rgb(215, 215, 215);
+      }
+
+      p{
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+
+    
+
+
+      .container-img-title-flex{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .divider{
+        height: 1px;
+        width: 100%;
+        background: rgb(102, 105, 102);
+        margin: 0 0 10px;
+      }
+
+      .container-img-discount{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        position:relative;
+      }
+
+      .discount-code{
+        position:absolute;
+        background-color: rgb(222, 94, 119);
+        border-radius: 4px;
+        padding: 4px;
+        font-weight: 500;
+        color: white;
+        font-size: 8px;
+        font-family: Google Sans Flex;
+        border: none;
+        top: 8px;
+        right:-16px;
+         box-shadow: 0px 0px 8px 0px rgb(189, 104, 104);
+      }
+
+      .img-view{
+        margin-top: 20px;
+        height: 120px;
+        width: 120px;
+        object-fit: cover;
+        object-position: co;
+        border-radius: 10px;
+        background-color: rgb(255, 255, 255);
+        transition: transform 0.3s ease;
+        transform-origin: center;
+        box-shadow: 0px 0px 8px 0px rgb(53, 50, 50);
+      }
+
+      .img-view:hover{
+        transform: scale(1.05);
+        cursor: pointer;
+      }
+
+
+      .title-paragraph{
+        font-family: Google Sans Flex;
+        margin-top: 10px;
+        font-size: 12px;
+        font-weight: bold;
+        color: rgb(72, 65, 65);
+      }
+
+
+
+
+
+      /*
+      Container per per info settato con relative per fissare la data di pubblicazione (absolute) all'interno dello stesso.
+      */
+      
+      .container-info-flex{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /*border-color: red;
+        border-style: solid;*/
+        position:relative;
+      }
+
+      /*
+      Stile per sezioni di testo descrittive del libro (pubblicazione e contenuto)
+      */
+
+      .publication-paragraph{
+        font-weight: bold;
+      }
+
+
+      .description-paragraph{
+        font-family: Open Sans;
+        font-size: 8px;
+        padding: 2px;
+      }
+
+      .box-editor-date{
+        font-family: Google Sans Flex;
+        font-size: 5px;
+        position: absolute;
+        bottom: 1px;
+        right:1px;
+      }
+
+      .editor-date{
+        font-style: italic;
+      }
+
+      .author-paragraph{
+        padding: 2px;
+        font-family: Google Sans Flex;
+        font-size: 8px;
+      }
+
+      .author-style{
+        font-weight: bold;
+      }
+
+
+      .container-category-shipping{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 8px 10px;
+        width: 100%;
+        box-sizing:border-box;
+        /*border-color: rgb(254, 80, 243);
+        border-style: solid;*/
+      }
+
+      .category-availability-flex{
+        margin-left: -6px;
+        margin-top:-10px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        /*border-color: blue;
+        border-style: solid;*/
+      }
+
+      .category-box{
+        font-family: Google Sans Flex;
+        font-size: 6px;
+        height: 14px;
+        white-space: nowrap;
+        background-color: rgb(218, 214, 208);
+        color: rgb(72, 65, 65);
+        border-radius: 3px;
+        border-style: none;
+        box-shadow: 0px 0px 8px 0px rgb(233, 231, 231);
+        transition: transform 0.3s ease;
+        transform-origin: center;
+      }
+
+      .category-box:hover{
+        transform: scale(1.05);
+        cursor: pointer;
+      }
+
+
+      .category-paragraph{
+        padding: 3px;
+        color: black;
+      }
+     
+      .availability-section{
+        margin-top: 8px;
+        font-family: Google Sans Flex;
+        font-size:6px;
+        white-space: nowrap;
+        color: #2a7a55;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        font-weight: 500;
+      }
+
+      /* Sezione per valutazione in stelle*/
+      .rating-section{
+        margin-top: 4px;
+        align-self: flex-start;
+        padding-left: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 4px;
+      }
+
+      .stars{
+        cursor: pointer;
+        display:flex;
+        flex-direction: row;
+        gap:1px;
+        transition: transform 0.3s ease;
+        transform-origin: center;
+      }
+
+      .stars:hover{
+        transform: scale(1.05);
+        cursor: pointer;
+      }
+
+
+      .star{
+        font-size:6px;
+        font-family: Google Sans Flex;
+      }
+
+      .star.filled{
+        color:#c8922a; 
+      }
+
+      .star.empty{
+        color:#d3d1c7;
+      }
+
+      .rating-score{
+        font-family: Google Sans Flex;
+        font-size:8px;
+        font-weight: 500;
+        color:#444;
+      }
+
+      .rating-count{
+        margin-bottom: 6px;
+        align-self: flex-start;
+        padding-left: 10px;
+        font-family: Google Sans Flex;
+        font-size: 5px;
+        color: #888;
+      }
+
+      /*Sezione per disponibilità prodotto*/
+
+      .availability-dot{
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: #2a7a55;
+        flex-shrink: 0;
+      }
+
+
+      .shipping-box-price-flex{
+        margin: 0;
+        align-items: flex-end;
+        font-family:  Google Sans Flex;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 8px;
+        /*border-color: rgb(0, 255, 179);
+        border-style: solid;*/
+      }
+
+      .shipping-box-flex{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        background-color: transparent;
+        border: 1px solid rgb(119, 110, 110);
+        height: 22px;
+        padding: 0 8px;
+        border-radius: 8px;
+        transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1), transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        cursor: pointer;
+      }
+
+
+      .shipping-box-flex:hover{
+        transform: scale(1.05);
+        filter: brightness(0.1);
+        color: white; 
+        cursor: pointer;
+      }
+
+      .chart-button{
+        margin-left: -8px;
+        height: 22px;
+        width: 22px;
+        border:none;
+        border-radius: 6px;
+        display: flex;
+        background-color: transparent;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .chart-img{
+        height: 14px;
+        width: 14px;
+        object-fit: contain;
+        filter: brightness(0);   /* ← rende l'immagine completamente nera */
+      }
+
+      .price-paragraph{
+        margin-bottom: 4px;
+        font-size: 10px;
+      }
+
+      .Add-to-chart-paragraph{
+        color: black;
+        padding:4px;
+        font-size: 6px;
+        white-space: nowrap;
+        font-weight: 500;
+      }
